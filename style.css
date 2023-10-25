@@ -1,0 +1,25 @@
+body {
+  background-color: purple;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.titulo {
+  font-size: 3rem;
+}
+
+.texto {
+  color: white;
+  line-height: 1.33;
+  max-width: 130ch;
+  padding: 20px 80px;
+
+}
