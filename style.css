@@ -57,7 +57,7 @@ img {
 
 .botao {
   padding: 16px 32px;
-  background-color: #a020f0;
+  background-color: #13e3fa;
   border-radius: 4px;
   text-transform: uppercase;
   color: #000;
@@ -77,11 +77,11 @@ img {
 
 @media (max-width: 800px) {
   .introducao {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
   }
-  .introducao h1 {
-    font-size: 2rem;
+  .botao {
+    text-align: center;
   }
 }
 
@@ -90,7 +90,7 @@ img {
     grid-template-columns: 1fr;
     font-size: 0.8rem;
   }
-  .botao{
+  .botao {
     text-align: center;
   }
 }
