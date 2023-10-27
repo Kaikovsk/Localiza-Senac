@@ -1,37 +1,58 @@
 body {
-  background-color: purple;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background-color: #15141f;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
 }
 
 a {
   text-decoration: none;
 }
 
-h1 {
-  text-align: center;
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
-p {
-  text-align: center;
-  font-size: 2rem;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.conteudo {
-  text-align: center;
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
 }
 
-.titulo {
-  font-size: 3rem;
+.introducao h1 {
+  font-size: 4rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+  color: #13e3fa;
 }
 
-.texto {
+.introducao p {
+  font-size: 1.5rem;
   color: white;
-  line-height: 1.33;
-  max-width: 130ch;
-  padding: 20px 80px;
 }
+
 .botao-conteudo {
   padding-top: 40px;
+  text-align: center;
 }
 
 .botao {
@@ -45,5 +66,31 @@ p {
 }
 
 .botao:hover {
-  background-color: #4B0082;
+  background-color: #4b0082;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+  }
+  .botao{
+    text-align: center;
+  }
 }
